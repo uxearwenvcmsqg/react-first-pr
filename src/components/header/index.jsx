@@ -5,7 +5,8 @@ import { NavMenu } from '../nav-menu'
 import { PRODUCTS, RESOURSES } from './constants';
 import { Button } from '../button';
 
-export const Header = () => {
+export 
+const Header = () => {
   return (
     <header className='flex items-center'>
         <div className='flex items-center'>
