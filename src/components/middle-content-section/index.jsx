@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../button'
+import { Card } from '../Card'
 
 export const MiddleContentSection = () => {
   return (
@@ -19,6 +20,10 @@ export const MiddleContentSection = () => {
         <a href="#" className='text-gray hover:text-red ease-in duration-150 my-10'> 
             Trusted by 4,000+ companies
         </a>
+
+        <div>
+            <Card />
+        </div>
 
     </div>
   )

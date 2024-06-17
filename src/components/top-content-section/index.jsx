@@ -5,8 +5,12 @@ export const TopContentSection = () => {
   const [buttonPosition, setButtonPosition] = useState(0);
 
   const handleMoveRight = () => {
-    const newPosition = buttonPosition + 10; 
-    setButtonPosition(newPosition);
+    const newPosition = buttonPosition + 15;
+    if (newPosition >= 300) {
+      setButtonPosition(300); // Сбрасываем позицию до 0, когда она достигает 50 или больше
+    } else {
+      setButtonPosition(newPosition);
+    }
   };
 
   return (
